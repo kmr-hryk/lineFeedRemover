@@ -1,0 +1,13 @@
+{
+  "name": "mailman のログ本文から余計な改行を削除するやつ",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "mailman のログ本文から余計な改行を削除します。",
+  "content_scripts": [
+    {
+      "matches": ["https://*/pipermail/*", "http://*/pipermail/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
