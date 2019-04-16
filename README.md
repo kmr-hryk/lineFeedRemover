@@ -16,6 +16,12 @@ mailman の過去ログのうち `https://*/pipermail/*` や `http://*/pipermail
 
 リポジトリをクローンするかコードをダウンロードして `chrome://extensions/` から追加してください。
 
+## ブックマークレットの方が楽
+
+```
+javascript:(function(){var mailBody=document.getElementsByTagName('pre')[0];mailBody.innerHTML=mailBody.innerHTML.replace(/\n\n/g,'\r').replace(/\n/g,' ').replace(/\r/g,'\n\n')})()
+```
+
 ---
 
 MIT License
